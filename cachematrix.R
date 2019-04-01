@@ -10,7 +10,7 @@ inverse <- NULL
                 inverse <<- NULL 
           }
         get <- function() a # Returning the matrix 
-        setinverse <- function(inverse) inverse <- inverse # Setting the inverse matrix 
+        setinverse <- function(inverse) inverse <<- inverse # Setting the inverse matrix 
         getinverse <- function() inverse # Returning the inverse matrix 
         list(set = set, get = get, setinverse = setinverse, getinverse = getinverse) # Returning a list of functions
 }
